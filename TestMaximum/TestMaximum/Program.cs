@@ -24,7 +24,7 @@ while (true)
             Console.WriteLine("Maximum value when comparing three string is " + MaxValueStrings);
             break;
         default:
-            Console.WriteLine("please choose a correct option");
+            Console.WriteLine("Please Choose a Correct Option");
             break;
     }
 }
