@@ -8,10 +8,10 @@ while (true)
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
-        case 1:
-            FindingMax test1 = new FindingMax();
-            int maxValueInt = test1.MaxValueInt(40, 20, 10);
-            Console.WriteLine("Maximum value when comparing three integers is " + maxValueInt);
+       case 1:
+            FindingMaxInteger test1 = new FindingMaxInteger();
+            int MaxValueInt = test1.MaxValueInt(50, 30, 15);
+            Console.WriteLine("Maximum value From three integers is " + MaxValueInt);
             break;
         case 2:
             FindingMaxofFloat test2 = new FindingMaxofFloat();
