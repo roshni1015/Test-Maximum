@@ -4,7 +4,7 @@ using TestMaximum;
 Console.WriteLine("Welcome to Test Maximum");
 while (true)
 {
-    Console.WriteLine("Please Choose the Option :\n1)Maximum of three Integers\n2)Maximum of three Float values\n3) Maximum of three Strings");
+    Console.WriteLine("Please choose the option :\n1)Test Maximum of 3 Integers\n2)Test Maximum of 3 Float values\n3)Test Maximum of 3 Strings");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
