@@ -11,17 +11,17 @@ while (true)
         case 1:
             FindingMax test1 = new FindingMax();
             int maxValueInt = test1.MaxValueInt(40, 20, 10);
-            Console.WriteLine("Maximum value when comparing three integers is " + maxValueInt);
+            Console.WriteLine("Maximum value From three integers is " + maxValueInt);
             break;
         case 2:
             FindingMaxofFloat test2 = new FindingMaxofFloat();
             double MaxValueFloat = test2.MaxValueFloat(4.55, 2.45, 1.05);
-            Console.WriteLine("Maximum value when comparing three Float  is " + MaxValueFloat);
+            Console.WriteLine("Maximum value From three Float  is " + MaxValueFloat);
             break;
         case 3:
             FindingMaxofString test3 = new FindingMaxofString();
             string MaxValueStrings = test3.MaxValueStrings("Elephant","Mango","bat");
-            Console.WriteLine("Maximum value when comparing three string is " + MaxValueStrings);
+            Console.WriteLine("Maximum value From three string is " + MaxValueStrings);
             break;
         default:
             Console.WriteLine("Please Choose a Correct Option");
