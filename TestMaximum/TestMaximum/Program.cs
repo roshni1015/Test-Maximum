@@ -10,8 +10,8 @@ while (true)
     {
         case 1:
             FindingMax test1 = new FindingMax();
-            int maxValueInt = test1.MaxValueInt(50, 30, 15);
-            Console.WriteLine("Maximum value From three integers is " + maxValueInt);
+            int MaxValueInt = test1.MaxValueInt(50, 30, 15);
+            Console.WriteLine("Maximum value From three integers is " + MaxValueInt);
             break;
         default:
             Console.WriteLine("Please Choose a Correct Option");
