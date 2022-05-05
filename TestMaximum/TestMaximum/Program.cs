@@ -16,7 +16,7 @@ while (true)
         case 2:
             FindingMaxofFloat test2 = new FindingMaxofFloat();
             double MaxValueFloat = test2.MaxValueFloat(4.55, 2.45, 1.05);
-            Console.WriteLine("Maximum value From  three integers is " + MaxValueFloat);
+            Console.WriteLine("Maximum value From  three Floats  is " + MaxValueFloat);
             break;
         default:
             Console.WriteLine("Please Choose a Correct Option");
