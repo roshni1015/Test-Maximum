@@ -19,7 +19,7 @@ while (true)
             Console.WriteLine("Maximum value when comparing three integers is " + MaxValueFloat);
             break;
         default:
-            Console.WriteLine("please choose a correct option");
+            Console.WriteLine("Please Choose a Correct Option");
             break;
     }
 }
