@@ -9,7 +9,7 @@ while (true)
     switch (option)
     {
         case 1:
-            FindingMax test1 = new FindingMax();
+            FindingMaxIntegers test1 = new FindingMaxIntegers();
             int MaxValueInt = test1.MaxValueInt(50, 30, 15);
             Console.WriteLine("Maximum value From three integers is " + MaxValueInt);
             break;
