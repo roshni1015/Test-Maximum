@@ -14,21 +14,21 @@ namespace TestMaximum.Tests
         [TestMethod()]
         public void MaxValueIntTest()
         {
-            FindingMax find = new FindingMax();
+            FindingMaxIntegers find = new FindingMaxIntegers();
             int x = find.MaxValueInt(50, 30, 15);
             Assert.AreEqual(50, x);
         }
         [TestMethod()]
         public void MaxValueIntTest2()
         {
-            FindingMax find = new FindingMax();
+            FindingMaxIntegers find = new FindingMaxIntegers();
             int x = find.MaxValueInt(30, 50, 15);
             Assert.AreEqual(50, x);
         }
         [TestMethod()]
         public void MaxValueIntTest3()
         {
-            FindingMax find = new FindingMax();
+            FindingMaxIntegers find = new FindingMaxIntegers();
             int x = find.MaxValueInt(15, 30, 50);
             Assert.AreEqual(50, x);
         }
