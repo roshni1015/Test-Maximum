@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace TestMaximum
 {
-    public class FindingMaxUsingGenerics
+    public class CreateGenericClass<M> where M : IComparable
     {
-        public static M MaxValueGenerics<M>(M a, M b, M c) where M : IComparable<M>
+        public M a, b, c;
+        public CreateGenericClass(M a, M b, M c)
         {
-
+            this.a = a;
+            this.b = b;
+            this.c = c;
+        }
+        public static M MaxValueGeneric<M>(M a, M b, M c) where M : IComparable<M>
+        {
 
             if ((a.CompareTo(b) > 0 && (a.CompareTo(c) > 0)) || (a.CompareTo(b) >= 0 && a.CompareTo(c) > 0) || (a.CompareTo(b) > 0 && a.CompareTo(c) >= 0))
             {
@@ -27,6 +33,6 @@ namespace TestMaximum
 
             return default;
         }
-
     }
 }
+    

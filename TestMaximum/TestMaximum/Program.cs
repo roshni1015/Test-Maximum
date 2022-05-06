@@ -4,7 +4,7 @@ using TestMaximum;
 Console.WriteLine("Welcome to Test Maximum");
 while (true)
 {
-    Console.WriteLine("Please Choose the Option :\n1)Maximum of three Integers\n2)Maximum of three Float values\n3) Maximum of three Strings \n4)Maximum of three using Generics");
+    Console.WriteLine("Please Choose the Option :\n1)Maximum of three Integers\n2)Maximum of three Float values\n3) Maximum of three Strings \n4)Maximum of three using Generics \n5)Maximum of three using Generics Class");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -32,7 +32,14 @@ while (true)
             string MaxValueGenerics3 = FindingMaxUsingGenerics.MaxValueGenerics<string>("Bananas", "Animal", "Apple");
             Console.WriteLine("Maximum value From three strings is " + MaxValueGenerics3);
             break;
-
+        case 5:
+            int MaxValueGeneric = CreateGenericClass<int>.MaxValueGeneric<int>(50, 35, 20);
+            Console.WriteLine("Maximum value From three strings is " + MaxValueGeneric);
+            double MaxValueGeneric2 = CreateGenericClass<double>.MaxValueGeneric<double>(6.87, 4.60, 2.33);
+            Console.WriteLine("Maximum value From three strings is " + MaxValueGeneric2);
+            string MaxValueGeneric3 = CreateGenericClass<string>.MaxValueGeneric<string>("Mango", "Doll", "Dog");
+            Console.WriteLine("Maximum value From three strings is " + MaxValueGeneric3);
+            break;
         default:
             Console.WriteLine("please choose a correct option");
             break;
