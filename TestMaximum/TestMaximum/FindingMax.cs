@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestMaximum
 {
-    public class FindingMax
+    public class FindingMaxInteger
     {
         public int MaxValueInt(int a, int b, int c)
         {
