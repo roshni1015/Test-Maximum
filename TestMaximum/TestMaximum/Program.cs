@@ -41,7 +41,7 @@ while (true)
             Console.WriteLine("Maximum value From three strings is " + MaxValueGeneric3);
             break;
         default:
-            Console.WriteLine("please choose a correct option");
+            Console.WriteLine("Please Choose a Correct Option");
             break;
     }
 }
