@@ -34,9 +34,9 @@ while (true)
             break;
         case 5:
             int MaxValueGeneric = CreateGenericClass<int>.MaxValueGeneric<int>(50, 35, 20);
-            Console.WriteLine("Maximum value From three strings is " + MaxValueGeneric);
+            Console.WriteLine("Maximum value From three Integer is " + MaxValueGeneric);
             double MaxValueGeneric2 = CreateGenericClass<double>.MaxValueGeneric<double>(6.87, 4.60, 2.33);
-            Console.WriteLine("Maximum value From three strings is " + MaxValueGeneric2);
+            Console.WriteLine("Maximum value From three Floats is " + MaxValueGeneric2);
             string MaxValueGeneric3 = CreateGenericClass<string>.MaxValueGeneric<string>("Mango", "Doll", "Dog");
             Console.WriteLine("Maximum value From three strings is " + MaxValueGeneric3);
             break;
