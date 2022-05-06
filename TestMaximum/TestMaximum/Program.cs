@@ -4,7 +4,7 @@ using TestMaximum;
 Console.WriteLine("Welcome to Test Maximum");
 while (true)
 {
-    Console.WriteLine("Please Choose the Option :\n1)Maximum of three Integers\n2)Maximum of three Float values\n3) Maximum of three Strings \n4)Maximum of three using Generics \n5)Maximum of three using Generics Class");
+    Console.WriteLine("Please Choose the Option :\n1)Maximum of three Integers\n2)Maximum of three Float values\n3) Maximum of three Strings \n4)Maximum of three using Generics \n5)Maximum of three using Generics Class \n6)Maximum of More Than Three");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -34,11 +34,20 @@ while (true)
             break;
         case 5:
             int MaxValueGeneric = CreateGenericClass<int>.MaxValueGeneric<int>(50, 35, 20);
-            Console.WriteLine("Maximum value From three strings is " + MaxValueGeneric);
+            Console.WriteLine("Maximum value From three Integer is " + MaxValueGeneric);
             double MaxValueGeneric2 = CreateGenericClass<double>.MaxValueGeneric<double>(6.87, 4.60, 2.33);
-            Console.WriteLine("Maximum value From three strings is " + MaxValueGeneric2);
+            Console.WriteLine("Maximum value From three Floats is " + MaxValueGeneric2);
             string MaxValueGeneric3 = CreateGenericClass<string>.MaxValueGeneric<string>("Mango", "Doll", "Dog");
             Console.WriteLine("Maximum value From three strings is " + MaxValueGeneric3);
+            break;
+        case 6:
+            FindingMax_ForMoreThanThree test5 = new FindingMax_ForMoreThanThree();
+            int ArrayOfIntegers = FindingMax_ForMoreThanThree.ArrayOfIntegers(95, 75, 35, 50, 45);
+            Console.WriteLine("Maximum value From three Integer is " + ArrayOfIntegers);
+            double ArrayOfDouble = FindingMax_ForMoreThanThree.ArrayOfDouble(7.5, 4.3, 1.4, 6.5, 3.4);
+            Console.WriteLine("Maximum value From three Floats is " + ArrayOfDouble);
+            string ArrayOfStrings = FindingMax_ForMoreThanThree.ArrayOfStrings("Flowers", "Doll", "Bat", "Apple" );
+            Console.WriteLine("Maximum value From three strings is " + ArrayOfStrings);
             break;
         default:
             Console.WriteLine("please choose a correct option");
