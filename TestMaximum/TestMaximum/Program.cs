@@ -4,7 +4,7 @@ using TestMaximum;
 Console.WriteLine("Welcome to Test Maximum");
 while (true)
 {
-    Console.WriteLine("Please Choose the Option :\n1)Maximum of three Integers\n2)Maximum of three Float values\n3) Maximum of three Strings \n4)Maximum of three using Generics \n5)Maximum of three using Generics Class \n6)Maximum of More Than Three");
+    Console.WriteLine("Please Choose the Option :\n1)Maximum of three Integers\n2)Maximum of three Float values \n3) Maximum of three Strings \n4)Maximum of three using Generics \n5)Maximum of three using Generics Class \n6)Maximum of More Than Three \n7)Maximum of Using Generic Method");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -49,8 +49,22 @@ while (true)
             string ArrayOfStrings = FindingMax_ForMoreThanThree.ArrayOfStrings("Flowers", "Doll", "Bat", "Apple" );
             Console.WriteLine("Maximum value From three strings is " + ArrayOfStrings);
             break;
+        case 7:
+            int[] inputArray = {25, 35, 45, 55, 65, 75, 85, 95, 15};
+            int Generic = UsingGenericMethods<int>.MaxOfMultiplevalueGenerics(inputArray);
+            Console.WriteLine("Max Value of Integers using Generics Method is :" + Generic);
+            double[] doubleInputArray = {4.5, 3.5 ,7.5, 8.5, 2.5, 9.5, 11.5, 10.5, 12.5};
+            double Generic2 = UsingGenericMethods<double>.MaxOfMultiplevalueGenerics(doubleInputArray);
+            Console.WriteLine("Max Value of Float using Generics Method :" + Generic2);
+            string[] stringInputArray = { "Mango", "Tea", "Watermelon", "Orange", "Pineapple", "Pear" };
+            string Generic3 = UsingGenericMethods<string>.MaxOfMultiplevalueGenerics(stringInputArray);
+            Console.WriteLine("Maximum of String using Generics Method is :" + Generic3);
+            break;
         default:
-            Console.WriteLine("please choose a correct option");
+            Console.WriteLine("Please Choose a Correct Option");
             break;
     }
 }
+
+
+
